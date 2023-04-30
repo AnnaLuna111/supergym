@@ -17,14 +17,6 @@
   }
 }
 
-.rouble {
-  font-family: $ff-rouble;
-  /* stylelint-disable */
-  text-transform: lowercase !important;
-  font-weight: 400 !important;
-  /* stylelint-enable */
-}
-
 .visually-hidden {
   position: absolute;
 
@@ -68,4 +60,31 @@
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.alumni {
+  font-family: $ff-alumni;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.hidden-not-desktop {
+  @include vp-1023 {
+    display: none;
+  }
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.wrapper__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr;
+  }
 }

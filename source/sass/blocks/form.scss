@@ -1,0 +1,105 @@
+.form {
+  color: $color-default-white;
+  background-color: $color-sappire;
+
+  &__container {
+    padding: 55px 103px 54px;
+
+    .alumni {
+      font-size: 54px;
+      font-weight: 800;
+      line-height: 84px;
+    }
+
+    h2 {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+
+    @include vp-1023 {
+      padding: 61px 133px 53px;
+
+      .alumni {
+        font-size: 42px;
+        font-weight: 600;
+        line-height: 50px;
+      }
+
+      h2 {
+        margin-bottom: 25px;
+      }
+    }
+
+    @include vp-767 {
+      padding: 64px 15px 53px;
+
+      .alumni {
+        font-size: 32px;
+        line-height: 38px;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 190px 190px;
+    gap: 30px;
+
+    input {
+      min-width: 190px;
+      padding: 10px 0 4px;
+      font-size: 14px;
+      line-height: 21px;
+      color: inherit;
+      background: inherit;
+      border: none;
+      border-bottom: 1px solid $color-light-slate-grey;
+
+      &:hover,
+      &:focus {
+        background: $black-to-right;
+      }
+    }
+
+    span {
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    @include vp-1023 {
+      grid-template-columns: 206px 206px;
+      gap: 30px 60px;
+
+      input {
+        min-width: 100%;
+      }
+    }
+
+    @include vp-767 {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+  }
+
+  &__button {
+    grid-column: 1/-1;
+    padding: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: inherit;
+
+    &:hover,
+    &:focus {
+      background: $black-to-right;
+    }
+
+    &:active {
+      background: $black-to-right;
+      border-color: transparent;
+    }
+
+    @include vp-767 {
+      margin-top: 15px;
+    }
+  }
+}
