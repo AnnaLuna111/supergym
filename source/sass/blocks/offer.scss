@@ -1,6 +1,6 @@
 .offer {
   &__container {
-    padding: 98px 0 90px;
+    padding: 95px 0 90px;
 
     a {
       padding: 0;
@@ -27,7 +27,7 @@
     }
 
     @include vp-1023 {
-      padding: 93px 0 66px;
+      padding: 93px 0 64px;
 
       h2 {
         margin-bottom: 40px;
@@ -37,7 +37,7 @@
     }
 
     @include vp-767 {
-      padding: 64px 0 40px;
+      padding: 62px 0 37px;
 
       h2 {
         margin-bottom: 42px;

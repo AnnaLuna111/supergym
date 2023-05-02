@@ -17,15 +17,11 @@
 
     &:hover,
     &:focus {
-      svg {
-        color: $color-crimson;
-      }
+      color: $color-crimson;
     }
 
     &:active {
-      svg {
-        color: $color-egyptian-blue;
-      }
+      color: $color-egyptian-blue;
     }
   }
 

@@ -2,7 +2,7 @@
   background-color: $color-gohost-white;
 
   &__container {
-    padding: 97px 0 125px;
+    padding: 95px 0 125px;
 
     h2 {
       margin: 0;
@@ -13,7 +13,7 @@
     }
 
     @include vp-1023 {
-      padding: 92px 0 83px;
+      padding: 90px 0 82px;
 
       h2 {
         margin-left: -22px;
@@ -168,7 +168,7 @@
 
     span {
       font-size: 74px;
-      line-height: 71px;
+      line-height: 109px;
     }
 
     p {
@@ -190,6 +190,7 @@
 
       span {
         display: block;
+        line-height: 70px;
       }
     }
 
